@@ -1,0 +1,111 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    margin: 0px;
+    padding: 0px;
+    background: rgb(165,165,218);
+    background: linear-gradient(180deg, rgba(165,165,218,1) 0%, rgba(69,60,81,1) 19%, rgba(118,112,170,1) 41%, rgba(165,165,218,1) 67%, rgba(86,70,96,1) 100%);
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas: 
+    "header header header header"
+    "section main main main"
+    "section main main main"
+    "section main main main"
+    "footer footer footer footer";
+}
+header{
+    grid-area: header;
+}
+h1{
+    color: rgb(9, 7, 10);
+    text-decoration: underline;
+    text-align: center;
+    font-size: 9rem;
+    margin: 0rem;
+}
+h4{
+    color: aliceblue;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+header nav ul{
+    font-weight: bold;
+    list-style: none;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background: blueviolet;
+    text-align: center;
+    font-size: 2.5rem;
+    color: black
+}
+
+section{
+    grid-area: section;
+    background-color: rgb(52, 43, 61);
+}
+
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main div{
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    color: white;
+    background-color: rgba(137, 43, 226, 0.89);
+    position: abs;
+    margin: 13px 0px;
+    text-align: center;
+    font-size: 25px;
+}
+
+main div img{
+    position: relative;
+    width: 190px;
+    height: 230px;
+    bottom: 20px;
+}
+
+
+footer{
+
+    grid-area: footer;
+    font-size: 3rem;
+}
+
+.fmaster{
+    border: 5px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer div div{
+    background-color: blueviolet;
+    text-align: center;
+    outline: 5px solid;
+    width: 24.7%;
+}
+
+.p1{
+    color: white;
+}
+.p3{
+    display: flex;
+    justify-content: space-evenly;
+}
