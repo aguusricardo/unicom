@@ -68,7 +68,6 @@ main div{
     height: 30rem;
     color: white;
     background-color: rgba(137, 43, 226, 0.89);
-    position: abs;
     margin: 13px 0px;
     text-align: center;
     font-size: 25px;
@@ -81,9 +80,13 @@ main div img{
     bottom: 20px;
 }
 
+.r3{
+    width: 260px;
+    height: 200px;
+    top: 8px;
+}
 
 footer{
-
     grid-area: footer;
     font-size: 3rem;
 }
