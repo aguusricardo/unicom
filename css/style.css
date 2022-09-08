@@ -72,6 +72,39 @@ section{
 }
 
 main{
+    color: white;
+    background-color: rgb(52, 43, 61);
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sec{
+    display: flex;
+    align-items: center;
+}
+
+.nosotros img{
+    left: 5%;
+    position: relative;
+
+}
+
+.main-nos{
+    display: flex;
+    align-items: center;
+}
+
+
+.main-nos div{
+
+    width: 800px;
+    font-size: 50PX;
+}
+
+.maindex{
+    background: none;
     grid-area: main;
     display: flex;
     flex-wrap: wrap;
@@ -106,9 +139,16 @@ main{
     font-size: 100px;
 }
 
+.mdp{
+    position: relative;
+    display: flex;
+    align-items: center;
+    right: 15%;
+}
+
 .boxind a{
     text-decoration: none;
-    color: whte; /* Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+    color: white;
 }
 .boxind{    /* cajas index */
     position: relative;
