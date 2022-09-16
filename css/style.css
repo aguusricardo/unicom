@@ -188,11 +188,33 @@ main{
     height: 230px;
     bottom: 20px;
 }
-.r3{
+.mon144{
+    width: 230px; 
+    height: 210px; 
+    top: 1px
+}
+.i5{
+    width: 260px; 
+    height: 190px;
+    top: 4px;
+}
+.i7{
     width: 260px;
     height: 200px;
     top: 8px;
 }
+.r3{
+    width: 260px; 
+    height: 200px; 
+    top: 4px;
+}
+
+.r5{
+    width:60%; 
+    height: 60%; 
+    top: 10px;
+}
+
 footer{
     grid-area: footer;
     font-size: 3rem;
@@ -225,7 +247,106 @@ footer div div{
 }
 
 
-@media screen and (min-width:768px){
+@media screen and (max-width: 480px){
+    
+    html{
+        font-size: 40%
+        
+    }
+    .contenedor{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+    header h1{
+        position: relative;
+        display: flex;
+    }
+    
+    section div iframe{
+        display: none;
+    }
+
+    header nav ul li{
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    header nav ul li a{
+        display: flex;
+        align-items: center;
+        height: 40px;
+    }
+
+    .boxind{
+        font-size: 25px;
+        height: auto;
+    }
+    
+    .boximg{
+        width: 75%;
+        height: 70%;
+    }
+
+    .mon144{
+        width: 160px;
+    }
+
+    .r3{
+        width: 160px;
+        height: auto;
+    }
+
+    .r5{
+        position: relative;
+        top: -20px;
+    }
+
+    .i7{
+        width: 180px;
+        height: auto;
+    }
+
+    .i5{
+        width: 180px;
+        height: 150px;
+    }
+
+    footer{
+        font-size: 2.5rem;
+    }
+
+    .p3{
+        display: inline-block
+    }
 
 
+    .mdp img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        left: 65px;
+    }
+
+    .sec{
+        display: flex;
+    }
+    .main-nos{
+        display: flex;
+
+    }
+
+    .nosotros img{
+        position: relative;
+        width: 75%;
+        left: 50px;
+        top: 10px;
+    }
+
+    .main-nos p{
+        font-size: 4rem;
+        text-align: center;
+    }
 }
+
